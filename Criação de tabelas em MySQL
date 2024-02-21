@@ -1,0 +1,12 @@
+CREATE DATABASE tipo_de_dados;
+SHOW DATABASES;
+USE tipo_de_dados;
+CREATE TABLE cadastro (nome VARCHAR(100), sobrenome MEDIUMTEXT, cpf CHAR(50));
+CREATE TABLE produtos (nome VARCHAR(100), sku CHAR(50), informacoes MEDIUMTEXT);
+INSERT INTO cadastro (nome, sobrenome, cpf) VALUES ("Felipe", "SALABERRY", "4805");
+INSERT INTO produtos (nome, sku, informacoes) VALUES ("Iphone 11 pro max", "11PROMAX", "iPhone 11 Pro Max: O auge da inovação e desempenho em um smartphone, oferecendo uma poderosa câmera tripla");
+
+
+SELECT * FROM cadastro;
+SELECT * FROM produtos
+
